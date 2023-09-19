@@ -11,9 +11,11 @@ import (
 func main() {
 	start := time.Now()
 
-	var ast = utils.ExtractAST(utils.GetAbsolutePath("../../files/print.json"))
-	interpreter.Interprete(ast)
+	var ast = utils.ExtractAST(utils.GetAbsolutePath("../../files/sum.json"))
+
+	context := make(map[string]interface{})
+	interpreter.Interprete(ast, context)
 
 	difference := time.Since(start)
-	fmt.Println("Difference", difference)
+	fmt.Println("The code was executed in", difference)
 }
