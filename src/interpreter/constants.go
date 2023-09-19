@@ -22,17 +22,15 @@ type Var struct {
 } */
 
 const (
-	If       = "If"
-	Str      = "Str"
-	Int      = "Int"
-	Bool     = "Bool"
-	Print    = "Print"
-	Let      = "Let"
-	Function = "Function"
-	Var      = "Var"
-)
-
-const (
-	Kind  = "kind"
-	Value = "value"
+	IF       = "If"
+	BINARY   = "Binary"
+	CALL     = "Call"
+	STRING   = "Str"
+	INTEGER  = "Int"
+	BOOLEAN  = "Bool"
+	PRINT    = "Print"
+	LET      = "Let"
+	FUNCTION = "Function"
+	TUPLE    = "Tuple"
+	VARIABLE = "Var"
 )
